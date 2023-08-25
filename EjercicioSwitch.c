@@ -344,6 +344,47 @@ int main(){
             }
             break;
 
+	    // Ejercicio 24. Juan Jose Baustista Muñoz
+	    case 24:
+		    int hora, minutos, segundos;
+		    // Obtener la hora en formato hora:minutos:segundos
+		    printf("Ingresa la hora (formato 24 horas): ");
+		    scanf("%d:%d:%d", &hora, &minutos, &segundos);
+	
+	    // Validar que los valores estén dentro de los rangos apropiados
+	    if (hora < 0 || hora > 23 || minutos < 0 || minutos > 59 || segundos < 0 || segundos > 59) {
+	        printf("Hora inválida. Asegúrate de ingresar valores válidos.\n");
+	        return 1; // Salir con código de error
+	    }
+	
+	    segundos++; // Añadir un segundo
+	
+	    // Ajustar los valores usando solo switch y case
+	    switch (segundos) {
+	        case 60:
+	            segundos = 0;
+	            minutos++;
+	            // No hay "break" aquí para continuar al siguiente caso
+	        case 61:
+	            if (minutos == 60) {
+	                minutos = 0;
+	                hora++;
+	                // No hay "break" aquí para continuar al siguiente caso
+	            }
+	        case 62:
+	            if (hora == 24) {
+	                hora = 0;
+	            }
+	            break;
+	        default:
+	            // No hacer nada, mantener los valores actuales
+	            break;
+	    }
+	
+	    // Imprimir la hora un segundo después
+	    printf("La hora un segundo después es: %02d:%02d:%02d\n", hora, minutos, segundos);
+		    break;
+	
         //Ejercicio 25. Daniel Moreno Herrera
         case 25:
             printf("Por favor Digite los años en la empresa para calcular el sueldo con su respectivo aumento: ");
