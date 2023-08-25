@@ -302,6 +302,7 @@ int main(){
                     break;
             }
             break;
+	    
         //Ejercicio 15. Valentina Murillo Muñoz
         case 15:	
 	    int n1, n2, n3, suma;
@@ -317,6 +318,30 @@ int main(){
                break;
            }
 	    break;
+
+	//Ejercicio 18. Gabriela Saldarriaga
+         case 18:
+         int num1,num2;
+         printf ("Ingrese un número: ");
+         scanf("%d", &num1);
+         printf("Ingrese otro número: ");
+         scanf("%d",&num2);
+          switch(n1 % 2==0){
+           case 1:
+            printf("%d es par\n",n1);
+           break;
+           case 0:
+            printf("%d no es par",n1);
+     }
+          switch(n2 % 2==0){
+           case 1:
+            printf("%d es par\n",n2);
+           break;
+           case 0:
+           printf("%d no es par",n2);
+           break;
+     }
+     break;
 	    
         //Ejercicio 23. Santiago Mejia Ocampo
         case 23:
