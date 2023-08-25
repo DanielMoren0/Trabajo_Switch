@@ -48,7 +48,7 @@ int main(){
 			}
 			break;
 
-        //Ejercicio 3. "Nombre"
+        //Ejercicio 3. ALEJANDRO LOAIZA PALACIO
         case 3:
         printf("Ingrese un numero del 1 al 7");
 			int dia;
