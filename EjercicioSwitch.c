@@ -49,6 +49,32 @@ int main(){
             }
             break;
 
+        //Ejercicio 23. Santiago Mejia Ocampo
+        case 23:
+            int importeBruto;
+            float importeNeto;
+            char mayor_menor;
+        
+            printf("Su importe es mayor a 15,000? (s/n): ");
+        
+            switch (mayor_menor = getchar())
+            {
+            case 's':
+            case 'S': 
+                printf("Ingrese el importe bruto: ");
+                scanf("%d", &importeBruto);
+                importeNeto = importeBruto - (importeBruto * 0.16);
+                printf("El importe neto es: %.2f", importeNeto);
+                break;
+            default:
+                printf("Ingrese el importe bruto: ");
+                scanf("%d", &importeBruto);
+                importeNeto = importeBruto - (importeBruto * 0.10);
+                printf("El importe neto es: %.2f", importeNeto);
+                break;
+            }
+            break;
+
         //Ejercicio 25. Daniel Moreno Herrera
         case 25:
             printf("Por favor Digite los años en la empresa para calcular el sueldo con su respectivo aumento: ");
