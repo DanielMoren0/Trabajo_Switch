@@ -327,16 +327,16 @@ int main(){
 	    
         //Ejercicio 15. Valentina Murillo Muñoz
         case 15:	
-	    int n1, n2, n3, suma;
+	        int num1, nume2, num3, adicion;
             printf("Ingrese tres números:\n");
-            scanf("%d %d %d", &n1, &n2, &n3);
-            suma = n1 + n2 ;
-           switch (suma==n3){
+            scanf("%d %d %d", &num1, &nume2, &num3);
+            adicion = num1 + nume2 ;
+           switch (adicion==num3){
                case 1:
-               printf("%d + %d = %d", n1, n2, n3);
+               printf("%d + %d = %d", num1, nume2, num3);
                break;
                case 0:
-               printf("%d + %d ≠ %d", n1, n2, n3);
+               printf("%d + %d ≠ %d", num1, nume2, num3);
                break;
            }
 	    break;
