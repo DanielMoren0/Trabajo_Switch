@@ -302,7 +302,22 @@ int main(){
                     break;
             }
             break;
-
+        //Ejercicio 15. Valentina Murillo Muñoz
+        case 15:	
+	    int n1, n2, n3, suma;
+            printf("Ingrese tres números:\n");
+            scanf("%d %d %d", &n1, &n2, &n3);
+            suma = n1 + n2 ;
+           switch (suma==n3){
+               case 1:
+               printf("%d + %d = %d", n1, n2, n3);
+               break;
+               case 0:
+               printf("%d + %d ≠ %d", n1, n2, n3);
+               break;
+           }
+	    break;
+	    
         //Ejercicio 23. Santiago Mejia Ocampo
         case 23:
             int importeBruto;
