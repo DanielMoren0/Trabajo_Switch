@@ -25,6 +25,7 @@ int main(){
 
         //Ejercicio 11. Johan Boshell Longas
         case 11:
+            char vocal;
             while ((vocal = getchar()) != '\n' && vocal != EOF); // Limpiar el búfer de entrada
             printf("Ingrese una letra para detectar si es una vocal o no lo es: ");
             scanf(" %c", &vocal); // Usar un espacio antes del %c para ignorar espacios y saltos de línea
