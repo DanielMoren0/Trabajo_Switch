@@ -263,7 +263,7 @@ int main(){
 			break;
         case 9:
         break;
-	//Ejercicio 10. "José Miguel Landino"
+	//Ejercicio 10. Landino José Miguel
         case 10:
 			printf("Ingrese un numero");
 			int cien;
