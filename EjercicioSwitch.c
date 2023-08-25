@@ -19,8 +19,33 @@ int main(){
         case 3:
         //code
         break;
-
+        
         //etc...
+
+
+        case 11:
+            while ((vocal = getchar()) != '\n' && vocal != EOF); // Limpiar el búfer de entrada
+            printf("Ingrese una letra para detectar si es una vocal o no lo es: ");
+            scanf(" %c", &vocal); // Usar un espacio antes del %c para ignorar espacios y saltos de línea
+
+            switch (vocal) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                case 'A':
+                case 'E':
+                case 'I':
+                case 'O':
+                case 'U':
+                    printf("La letra ingresada es una vocal\n");
+                    break;
+                default:
+                    printf("La letra ingresada no es una vocal\n");
+                    break;
+            }
+            break;
 
         //Ejercicio 25. Daniel Moreno Herrera
         case 25:
