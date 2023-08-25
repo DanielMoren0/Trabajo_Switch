@@ -392,6 +392,40 @@ int main(){
             }
             break;
 
+	    // Ejercicio 21. Juan Andrés Vera
+	    case 21:
+	          int opcion;
+                  float lado1, lado2, lado3, perimetro;
+
+                  printf("Calculadora de perimetro de triangulos\n");
+                  printf("(1) Triangulo Equilatero\n");
+                  printf("(2) Triangulo Isosceles\n");
+                  printf("(3) Triangulo Escaleno\n");
+                  printf("Selecciona una opcion: ");
+                  scanf("%d", &opcion);
+
+                  switch (opcion) {
+                    case 1:printf("Ingrese la longitud de un lado del triangulo equilatero: ");
+                    scanf("%f", &lado1);
+                    perimetro = 3 * lado1;
+                    break;
+                    case 2:printf("Ingrese la longitud de dos lados iguales del triangulo isosceles: ");
+                    scanf("%f %f", &lado1, &lado2);
+                    printf("Ingrese la longitud del tercer lado del triangulo isosceles: ");
+                    scanf("%f", &lado3);
+                    perimetro = lado1 + lado2 + lado3;
+                    break;
+                    case 3:printf("Ingrese la longitud de los tres lados del triangulo escaleno: ");
+                    scanf("%f %f %f", &lado1, &lado2, &lado3);
+                    perimetro = lado1 + lado2 + lado3;
+                    break;
+                    default:
+                    printf("Opcion no valida.\n");
+                 }
+            printf("El perimetro del triangulo seleccionado es: %.2f\n", perimetro);
+            return 0;
+            break;
+	    
 	    // Ejercicio 24. Juan Jose Baustista Muñoz
 	    case 24:
 		    int hora, minutos, segundos;
