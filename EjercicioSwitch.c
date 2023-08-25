@@ -7,21 +7,275 @@ int main(){
     switch (Ejercicio){
         //Ejercicio 1. "Nombre"
         case 1:
-        //code
-        break;
+        printf("Ingrese un numero del 1 al 5");
+			int n;
+			scanf("%d", &n);
+			switch(n){
+				case 1:
+					printf("No es primo");
+					break;
+				case 2:
+					printf("Primo");
+					break;
+				case 3:
+					printf("Primo");
+					break;
+				case 4:
+					printf("No es primo");
+					break;
+				case 5:
+					printf("Primo");
+					break;
+				default:
+					printf("Ingrese una opcion valida");
+					break;
+			}
+			break;
 
         //Ejercicio 2. "Nombre"
         case 2:
-        //code
-        break;
+        printf("Ingrese un numero para definir si es par o impar");
+			int p;
+			scanf("%d", &p);
+			switch ((p%2)==0){
+			case true:
+				printf("El numero es par");
+				break;
+			default:
+				printf("El numero es impar");
+				break;
+			}
+			break;
 
         //Ejercicio 3. "Nombre"
         case 3:
-        //code
+        printf("Ingrese un numero del 1 al 7");
+			int dia;
+			scanf("%d",&dia);
+			switch(dia){
+				case 1:
+					printf("Lunes");
+					break;
+				case 2:
+					printf("Martes");
+					break;
+				case 3:
+					printf("Miercoles");
+					break;
+				case 4:
+					printf("Jueves");
+					break;
+				case 5:
+					printf("Viernes");
+					break;
+				case 6:
+					printf("Sabado");
+					break;
+				case 7:
+					printf("Domingo");
+					break;
+				default:
+					printf("Ingrese una opcion valida");
+					break;
+			}
+			break;
+        case 4:
+			printf("Ingrese un numero del 1 al 12");
+			int mes;
+			scanf("%d",&mes);
+			switch(mes){
+				case 1:
+					printf("Enero");
+					break;
+				case 2:
+					printf("Febrero");
+					break;
+				case 3:
+					printf("Marzo");
+					break;
+				case 4:
+					printf("Abril");
+					break;
+				case 5:
+					printf("Mayo");
+					break;
+				case 6:
+					printf("Junio");
+					break;
+				case 7:
+					printf("Julio");
+					break;
+				case 8:
+					printf("Agosto");
+					break;
+				case 9:
+					printf("Septiembre");
+					break;
+				case 10:
+					printf("Octubre");
+					break;
+				case 11:
+					printf("Noviembre");
+					break;
+				case 12:
+					printf("Diciembre");
+					break;
+				default:
+					printf("Ingrese una opcion valida");
+					break;
+			}
+			break;
+        case 5:
+			printf("Ingrese 3 numeros para mostrarlos de menor a mayor");
+			int n1, n2, n3;
+			scanf("%d%d%d",&n1,&n2,&n3);
+			switch((n1<n2)&&(n2<n3)){
+				case true:
+					printf("%d\n",n1);
+					switch (n2<n3){
+						case true:
+							printf("%d\n",n2);
+							printf("%d\n",n3);
+							break;
+						default:
+							printf("%d\n",n3);
+							printf("%d\n",n2);
+							break;
+					}
+					break;
+				default:
+					switch((n2<n1)&&(n2<n3)){
+						case true:
+							printf("%d\n",n2);
+							switch(n1<n3){
+								case true:
+									printf("%d\n",n1);
+									printf("%d\n",n3);
+									break;
+								default:
+									printf("%d\n",n3);
+									printf("%d\n",n1);
+									break;
+							}
+							break;
+						default:
+							switch((n3<n2)&&(n3<n1))
+							{
+								case true:
+									printf("%d\n",n3);
+									switch(n2<n1){
+										case true:
+											printf("%d\n",n2);
+											printf("%d\n",n1);
+											break;
+										default:
+											printf("%d\n",n1);
+											printf("%d\n",n2);
+											break;
+									}
+									break;
+								default:
+									break;
+							}
+							break;
+					}
+					break;
+			}
+			break;
+        case 6:
+			printf("Ingrese 3 numeros para mostrarlos de mayor a menor");
+			int nm1, nm2, nm3;
+			scanf("%d%d%d",&nm1,&nm2,&nm3);
+			switch((nm1>nm2)&&(nm2>nm3)){
+				case true:
+					printf("%d\n",nm1);
+					switch (nm2>nm3){
+						case true:
+							printf("%d\n",nm2);
+							printf("%d\n",nm3);
+							break;
+						default:
+							printf("%d\n",nm3);
+							printf("%d\n",nm2);
+							break;
+					}
+					break;
+				default:
+					switch((nm2>nm1)&&(nm2>nm3)){
+						case true:
+							printf("%d\n",nm2);
+							switch(nm1>nm3){
+								case true:
+									printf("%d\n",nm1);
+									printf("%d\n",nm3);
+									break;
+								default:
+									printf("%d\n",nm3);
+									printf("%d\n",nm1);
+									break;
+							}
+							break;
+						default:
+							switch((nm3>nm2)&&(nm3>nm1))
+							{
+								case true:
+									printf("%d\n",nm3);
+									switch(nm2>nm1){
+										case true:
+											printf("%d\n",nm2);
+											printf("%d\n",nm1);
+											break;
+										default:
+											printf("%d\n",nm1);
+											printf("%d\n",nm2);
+											break;
+									}
+									break;
+								default:
+									break;
+							}
+							break;
+					}
+					break;
+			}
+			break;
+        case 7:
         break;
-        
-        //etc...
-
+        case 8:
+			printf("Ingrese un numero");
+			int num;
+			scanf("%d",&num);
+			switch(num==0){
+				case true:
+					printf("\nEl numero es cero.");
+					break;
+				default:
+					switch(num>0){
+						case true:
+							printf("\nEl numero es positivo");
+							break;
+						default:
+							printf("\nEl numero es negativo");
+							break;
+					}
+					break;
+			}
+			break;
+        case 9:
+        break;
+        case 10:
+			printf("Ingrese un numero");
+			int cien;
+			scanf("%d",&cien);
+			switch(cien>100){
+				case true:
+					printf("\nEl numero es mayor que 100.");
+					break;
+				default:
+					printf("\nEl numero es menor que 100");
+					break;
+			}
+			break;
 
         //Ejercicio 11. Johan Boshell Longas
         case 11:
