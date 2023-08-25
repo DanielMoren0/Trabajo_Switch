@@ -344,24 +344,24 @@ int main(){
 
 	//Ejercicio 18. Gabriela Saldarriaga
          case 18:
-         int num1,num2;
+         int numer1,numer2;
          printf ("Ingrese un número: ");
-         scanf("%d", &num1);
+         scanf("%d", &numer1);
          printf("Ingrese otro número: ");
-         scanf("%d",&num2);
+         scanf("%d",&numer2);
           switch(n1 % 2==0){
            case 1:
-            printf("%d es par\n",n1);
+            printf("%d es par\n",numer1);
            break;
            case 0:
-            printf("%d no es par",n1);
+            printf("%d no es par",numer1);
      }
-          switch(n2 % 2==0){
+          switch(numer2 % 2==0){
            case 1:
-            printf("%d es par\n",n2);
+            printf("%d es par\n",numer2);
            break;
            case 0:
-           printf("%d no es par",n2);
+           printf("%d no es par",numer2);
            break;
      }
      break;
