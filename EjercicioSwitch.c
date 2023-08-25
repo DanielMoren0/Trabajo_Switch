@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 int main(){
     int Ejercicio;
     printf("Digite el numero del ejercicio al que desea ingresar:");
