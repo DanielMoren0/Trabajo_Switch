@@ -304,6 +304,27 @@ int main(){
             }
             break;
 	    
+	  //Ejercicio 12. Maximiliano Giraldo Ocampo
+	  case 12:
+            int nc1, nc2, nc3, ordencreciente;
+            printf("Ingrese el primer numero\n");
+            scanf("%d",&nc1);
+            printf("Ingrese el segundo numero\n");
+            scanf("%d",&nc2);
+            printf("Ingrese el tercer numero\n");
+            scanf("%d",&nc3);
+            ordencreciente = nc1 < nc2 && nc2 < nc3;
+            switch (ordencreciente)
+            {
+                case 1:
+                    printf("Fueron ingresados en orden creciente\n");
+                    break;
+                default:
+                    printf("No fueron ingresados en orden creciente\n");
+                    break;
+            }
+            break; 
+	    
         //Ejercicio 15. Valentina Murillo Muñoz
         case 15:	
 	    int n1, n2, n3, suma;
