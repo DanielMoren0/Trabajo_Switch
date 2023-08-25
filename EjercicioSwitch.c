@@ -23,6 +23,7 @@ int main(){
         //etc...
 
 
+        //Ejercicio 11. Johan Boshell Longas
         case 11:
             while ((vocal = getchar()) != '\n' && vocal != EOF); // Limpiar el búfer de entrada
             printf("Ingrese una letra para detectar si es una vocal o no lo es: ");
